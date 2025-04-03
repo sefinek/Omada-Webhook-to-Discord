@@ -28,4 +28,4 @@ http://192.168.0.145:8080/discord/webhook
 ```
 
 ## MIT License
-Copyright 2024 © by [Sefinek](https://sefinek.net). All Rights Reserved.
+Copyright 2024-2025 © by [Sefinek](https://sefinek.net). All Rights Reserved.
