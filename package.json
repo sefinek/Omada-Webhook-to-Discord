@@ -1,22 +1,21 @@
 {
   "name": "omada-webhook-to-discord",
-  "version": "1.0.1",
-  "description": "An easy script for integrating Discord Webhooks with the Omada Controller. It allows sending logs from the controller to a selected Discord channel.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "up": "ncu -u && npm install && npm update && npm audit fix"
+  "version": "1.0.2",
+  "homepage": "https://github.com/sefinek/Omada-Webhook-to-Discord#readme",
+  "bugs": {
+    "url": "https://github.com/sefinek/Omada-Webhook-to-Discord/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sefinek/Omada-Webhook-to-Discord.git"
   },
-  "author": "Sefinek <contact@sefinek.net> (https://sefinek.net)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sefinek/Omada-Webhook-to-Discord/issues"
+  "author": "Sefinek <contact@sefinek.net> (https://sefinek.net)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "up": "ncu -u && npm install && npm update && npm audit fix"
   },
-  "homepage": "https://github.com/sefinek/Omada-Webhook-to-Discord#readme",
   "dependencies": {
     "axios": "^1.9.0",
     "dotenv": "^16.5.0",
