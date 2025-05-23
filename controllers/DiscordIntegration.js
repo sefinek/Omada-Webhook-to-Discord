@@ -5,6 +5,7 @@ module.exports = async (req, res) => {
 	if (!process.env.DISCORD_WEBHOOK_URL) {
 		return res.status(500).send('DISCORD_WEBHOOK_URL is not set in the environment variables');
 	}
+
 	if (!req.body || typeof req.body !== 'object') {
 		return res.status(400).send('Invalid request body format');
 	}

@@ -1,5 +1,4 @@
-const { Router } = require('express');
-const router = Router();
+const router = require('express').Router();
 
 // Controllers
 const DiscordIntegrationController = require('../controllers/DiscordIntegration.js');

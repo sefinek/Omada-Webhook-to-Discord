@@ -7,7 +7,6 @@ axios.defaults.headers.common = {
 	'Content-Type': 'application/json',
 	'Cache-Control': 'no-cache',
 	'Connection': 'keep-alive',
-	'DNT': '1',
 };
 
 axios.defaults.timeout = 30000;
