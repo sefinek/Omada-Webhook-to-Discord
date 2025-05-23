@@ -4,7 +4,7 @@ const router = require('express').Router();
 const DiscordIntegrationController = require('../controllers/DiscordIntegration.js');
 
 // Middlewares
-const verifyShardSecret = require('../middlewares/other/verifySecret.js');
+const verifyShardSecret = require('../middlewares/verifySecret.js');
 
 // Endpoints
 router.post('/discord/webhook', verifyShardSecret, DiscordIntegrationController);
