@@ -46,5 +46,5 @@ app.listen(port, () => {
 	console.log(`- Local: http://127.0.0.1:${port}/discord/webhook`);
 	localLinks.forEach(link => console.log(`- Network: ${link}/discord/webhook`));
 
-	if (process.env.NODE_ENV === 'production') process.send('ready');
+	process.send && process.send('ready');
 });
