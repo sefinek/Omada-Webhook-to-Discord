@@ -13,12 +13,10 @@ const { notFound, internalError } = require('./middlewares/errors.js');
 
 // Network interfaces
 const port = process.env.PORT;
-const getLocalNetworkLinks = () => {
-	return Object.values(networkInterfaces())
-		.flat()
-		.filter(net => net.family === 'IPv4' && !net.internal)
-		.map(net => `http://${net.address}:${port}`);
-};
+const getLocalNetworkLinks = () => Object.values(networkInterfaces())
+	.flat()
+	.filter(x => x.family === 'IPv4' && !x.internal)
+	.map(x => `http://${x.address}:${port}`);
 
 // Create an Express app
 const app = express();
