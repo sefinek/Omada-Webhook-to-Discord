@@ -23,7 +23,7 @@ const app = express();
 
 // Middlewares
 app.use(helmet());
-app.use(express.json({ limit: '6kb' }));
+app.use(express.json({ limit: '4kb' }));
 app.use(logger);
 app.use(limiter);
 app.use(timeout());
