@@ -42,7 +42,7 @@ app.listen(port, () => {
 	const localLinks = getLocalNetworkLinks();
 	console.log(`[${process.env.NODE_ENV.toUpperCase()}] Waiting for events (version v${version})`);
 	console.log(`- Local  : http://127.0.0.1:${port}/discord/webhook`);
-	localLinks.forEach(link => console.log(`- Network: ${link}/discord/webhook`));
+	localLinks.forEach(url => console.log(`- Network: ${url}/discord/webhook`));
 
-	process.send && process.send('ready');
+	process.send?.('ready');
 });
