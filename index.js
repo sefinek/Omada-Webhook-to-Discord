@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('env-native').config();
 
 const express = require('express');
 const { networkInterfaces } = require('node:os');
