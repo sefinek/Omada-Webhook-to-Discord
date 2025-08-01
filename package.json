@@ -23,7 +23,7 @@
     "express-rate-limit": "^7.5.1",
     "express-timeout-handler": "^2.2.2",
     "helmet": "^8.1.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.31.0",
