@@ -1,14 +1,14 @@
 module.exports = {
 	apps: [{
-		name: 'omada-w',
+		name: 'omadadc',
 		script: './index.js',
 
 		// Logging configuration
 		log_date_format: 'HH:mm:ss.SSS DD.MM.YYYY',
 		merge_logs: true,
-		log_file: '/home/sefinek/logs/other/omada-w/combined.log',
-		out_file: '/home/sefinek/logs/other/omada-w/out.log',
-		error_file: '/home/sefinek/logs/other/omada-w/error.log',
+		log_file: '~/logs/other/omada-webhook-to-discord/combined.log',
+		out_file: '~/logs/other/omada-webhook-to-discord/out.log',
+		error_file: '~/logs/other/omada-webhook-to-discord/error.log',
 
 		// Application restart policy settings
 		wait_ready: true,
