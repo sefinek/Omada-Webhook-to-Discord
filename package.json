@@ -1,6 +1,6 @@
 {
   "name": "omada-webhook-to-discord",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "homepage": "https://github.com/sefinek/Omada-Webhook-to-Discord#readme",
   "bugs": {
     "url": "https://github.com/sefinek/Omada-Webhook-to-Discord/issues"
@@ -14,6 +14,7 @@
   "main": "index.js",
   "scripts": {
     "m": "ncu -u && npm install && npm update",
+    "update": "npm run pull && npm ci --omit=dev && pm2 restart cdn",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -26,7 +27,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "discord-api-types": "^0.38.38",
+    "discord-api-types": "^0.38.40",
     "globals": "^17.3.0"
   }
 }
