@@ -2,7 +2,7 @@
 An easy script for integrating Discord Webhooks with the Omada Controller. It allows sending logs from the controller to a selected Discord channel.
 
 ![Discord_gVcpXzaMEdDg.png](.github/images/Discord_gVcpXzaMEdDg.png)
-*ENABLE_DATA_CENSORING=true*
+`ENABLE_DATA_CENSORING=true`
 
 ## Worth Knowing
 ✅ Discord @mentions for critical alerts (detected attack, errors, etc.)  
