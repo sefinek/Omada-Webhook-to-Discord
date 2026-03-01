@@ -28,6 +28,6 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "discord-api-types": "^0.38.40",
-    "globals": "^17.3.0"
+    "globals": "^17.4.0"
   }
 }
