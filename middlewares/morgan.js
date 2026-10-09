@@ -1,5 +1,7 @@
 const morgan = require('morgan');
 
-morgan.token('body', ({ body }) => JSON.stringify(body));
+const isDevelopment = process.env.NODE_ENV === 'development';
 
-module.exports = morgan(`[:status :method :response-time ms] :url - :user-agent${process.env.NODE_ENV === 'development' ? ' :remote-addr :body' : ''}`);
+const requestLine = morgan.compile(`[:status :method :response-time ms] :url - :user-agent${isDevelopment ? ' :remote-addr' : ''}`);
+
+module.exports = morgan((tokens, req, res) => isDevelopment ? `${requestLine(tokens, req, res)} ${JSON.stringify(req.body)}` : requestLine(tokens, req, res));
